@@ -5,7 +5,6 @@
     <!-- Always include this permission -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <!-- Required for internet access -->
     <uses-permission android:name="android.permission.INTERNET" />
 
 
@@ -22,8 +21,9 @@
 
         <!-- Add your Mapbox Access Token here -->
         <meta-data
-            android:name="MAPBOX_ACCESS_TOKEN"
-            android:value="YOUR_MAPBOX_ACCESS_TOKEN" />
+        android:name="MAPBOX_ACCESS_TOKEN"
+        android:value="YOUR_MAPBOX_ACCESS_TOKEN" />
+
 
         <activity
             android:name=".MainActivity"

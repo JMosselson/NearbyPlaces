@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.nearbyplaces"
-    compileSdk = 35
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.nearbyplaces"
         minSdk = 26
-        targetSdk = 35
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -48,6 +48,9 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    // Mapbox Maps SDK dependency
-    implementation("com.mapbox.maps:android:11.0.0")
+    //MapBox
+    implementation("com.mapbox.maps:android:11.4.1")
+    implementation("com.mapbox.maps:mapbox-maps-plugin-annotation:11.4.1")
+    implementation("com.mapbox.maps:mapbox-maps-plugin-gestures:11.4.1")
+    implementation("com.mapbox.maps:mapbox-maps-plugin-locationcomponent:11.4.1")
 }
